@@ -1,0 +1,22 @@
+{
+  "name": "PomodoroTimer",
+  "version": "0.0.1",
+  "description": "A timer application for Pomodoro technique.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:artifactsauce/PomodoroTimer.git"
+  },
+  "author": "Kenji Akiyama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artifactsauce/PomodoroTimer/issues"
+  },
+  "homepage": "https://github.com/artifactsauce/PomodoroTimer",
+  "devDependencies": {
+    "electron-prebuilt": "^0.29.2"
+  }
+}
