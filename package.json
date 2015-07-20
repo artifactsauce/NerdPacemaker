@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/artifactsauce/PomodoroTimer",
   "devDependencies": {
+    "bower": "^1.4.1",
     "electron-prebuilt": "^0.29.2"
   }
 }

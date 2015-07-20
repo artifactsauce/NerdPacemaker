@@ -1,0 +1,18 @@
+{
+  "name": "PomodoroTimer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/artifactsauce/PomodoroTimer",
+  "authors": [
+    "Kenji Akiyama <artifactsauce@gmail.com>"
+  ],
+  "description": "A timer application for Pomodoro technique",
+  "main": "main.js",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
