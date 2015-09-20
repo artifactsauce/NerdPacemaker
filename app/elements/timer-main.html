@@ -1,0 +1,55 @@
+<dom-module id="timer-main">
+  <style>
+    :host {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      h1.paper-font-display1 {
+        font-size: 24px;
+      }
+
+      #timer {
+        font-size: 500%;
+        text-align: center;
+        color: #3F51B5;
+    }
+
+    #control-buttons {
+    text-align: center;
+    }
+    .control-button {
+    background-color: #3F51B5;
+    color: white;
+    }
+
+
+    }
+
+  </style>
+  <template>
+    <div id="timer">{{time}}</div>
+    <div id="control-buttons">
+      <paper-button raised class="control-button">Start</paper-button>
+      <paper-button raised class="control-button">Stop</paper-button>
+      <paper-button raised class="control-button">Next</paper-button>
+    </div>
+  </template>
+
+  <script>
+    (function() {
+      Polymer({
+        is: 'timer-main',
+        properties: {
+          time: {
+            type: String,
+            value: '25:00',
+            notify: true
+          }
+        }
+      });
+
+    })();
+  </script>
+
+</dom-module>
