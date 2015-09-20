@@ -6,6 +6,11 @@
         type: String,
         value: '25:00',
         notify: true
+      },
+      message: {
+        type: String,
+        value: 'This is message.',
+        notify: true
       }
     }
   });
