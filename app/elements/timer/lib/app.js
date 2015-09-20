@@ -1,4 +1,5 @@
 (function() {
+  'use strict';
   Polymer({
     is: 'timer-main',
     properties: {
