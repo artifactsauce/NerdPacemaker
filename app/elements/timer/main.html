@@ -30,9 +30,9 @@
   <template>
     <div id="timer">{{time}}</div>
     <div id="control-buttons">
-      <paper-button raised class="control-button">Start</paper-button>
-      <paper-button raised class="control-button">Stop</paper-button>
-      <paper-button raised class="control-button">Next</paper-button>
+      <paper-button raised class="control-button" on-click="start">Start</paper-button>
+      <paper-button raised class="control-button" on-click="stop">Stop</paper-button>
+      <paper-button raised class="control-button" on-click="next">Next</paper-button>
     </div>
     <div><p class="paper-font-body">{{message}}</p></div>
   </template>
