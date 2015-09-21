@@ -30,7 +30,7 @@
     start: function() {
       var self = this;
       this.intervalId = setInterval(
-        function(){self.time_elapses()},
+        function(){ self.timeElapses(); },
         1000
       );
       console.debug('start - ID: ' + this.intervalId);
@@ -44,7 +44,7 @@
       this.time = '25:00';
       this.start();
     },
-    time_elapses: function() {
+    timeElapses: function() {
       var now = converter.m2s(this.time);
       this.time = converter.s2m(now - 1);
     },
