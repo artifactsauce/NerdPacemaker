@@ -39,7 +39,11 @@
       clearInterval(this.intervalId);
       console.debug('stop -  ID: ' + this.intervalId);
     },
-    next:  function() { console.log('next'); },
+    next:  function() {
+      this.stop();
+      this.time = '25:00';
+      this.start();
+    },
     time_elapses: function() {
       var now = converter.m2s(this.time);
       this.time = converter.s2m(now - 1);
