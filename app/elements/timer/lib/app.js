@@ -69,10 +69,10 @@
         var message = 'Elapsed time: ' + defaultTime.concentrate;
         this.message = message;
         this.notify(title, message);
-        console.debug(title, message);
       }
     },
     notify: function(title, message) {
+      console.debug(title, message);
     },
     ready: function() {
       console.log(this);
