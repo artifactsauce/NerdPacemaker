@@ -54,8 +54,20 @@
       this.start();
     },
     timeElapses: function() {
-      var now = converter.m2s(this.time);
-      this.time = converter.s2m(now - 1);
+      var now = converter.m2s(this.time) - 1;
+      this.time = converter.s2m(now);
+
+      if (now === 0) {
+        this.stop();
+
+        var title = 'PomodoroTimer';
+        var message = 'Elapsed time: 00:10';
+        this.message = message;
+        this.notify(title, message);
+        console.debug(title, message);
+      }
+    },
+    notify: function(title, message) {
     },
     ready: function() {
       console.log(this);
