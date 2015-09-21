@@ -28,6 +28,10 @@
       }
     },
     start: function() {
+      if (this.intervalId !== void 0) {
+        return;
+      }
+
       var self = this;
       this.intervalId = setInterval(
         function(){ self.timeElapses(); },
@@ -36,8 +40,13 @@
       console.debug('start - ID: ' + this.intervalId);
     },
     stop:  function() {
+      if (this.intervalId === void 0) {
+        return;
+      }
+
       clearInterval(this.intervalId);
       console.debug('stop -  ID: ' + this.intervalId);
+      this.intervalId = void 0;
     },
     next:  function() {
       this.stop();
