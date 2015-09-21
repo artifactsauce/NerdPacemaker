@@ -4,7 +4,7 @@
     s2m: function(s) {
       var minutes = Math.floor(s / 60);
       var seconds = s % 60;
-      return minutes.toString() + ':' + ('0' + seconds.toString()).slice(-2);
+      return ('0' + minutes.toString()).slice(-2) + ':' + ('0' + seconds.toString()).slice(-2);
     },
     m2s: function(m) {
       var arrayString = m.split(':');
