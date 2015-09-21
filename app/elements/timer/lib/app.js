@@ -23,7 +23,7 @@
       },
       message: {
         type: String,
-        value: 'This is message.',
+        value: 'Let\'s get started.',
         notify: true
       }
     },
@@ -37,6 +37,7 @@
         function(){ self.timeElapses(); },
         1000
       );
+      this.message = 'Time has elapsed...';
       console.debug('start - ID: ' + this.intervalId);
     },
     stop:  function() {
