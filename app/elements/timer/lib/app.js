@@ -60,6 +60,7 @@
 
       if (now === 0) {
         this.stop();
+        this.time = '25:00';
 
         var title = 'PomodoroTimer';
         var message = 'Elapsed time: 00:10';
