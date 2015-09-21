@@ -13,12 +13,15 @@
       return minutes * 60 + seconds;
     }
   };
+  var defaultTime = {
+    concentrate: '25:00'
+  };
   Polymer({
     is: 'timer-main',
     properties: {
       time: {
         type: String,
-        value: '25:00',
+        value: defaultTime.concentrate,
         notify: true
       },
       message: {
@@ -51,7 +54,7 @@
     },
     next:  function() {
       this.stop();
-      this.time = '25:00';
+      this.time = defaultTime.concentrate;
       this.start();
     },
     timeElapses: function() {
@@ -60,10 +63,10 @@
 
       if (now === 0) {
         this.stop();
-        this.time = '25:00';
+        this.time = defaultTime.concentrate;
 
         var title = 'PomodoroTimer';
-        var message = 'Elapsed time: 00:10';
+        var message = 'Elapsed time: ' + defaultTime.concentrate;
         this.message = message;
         this.notify(title, message);
         console.debug(title, message);
