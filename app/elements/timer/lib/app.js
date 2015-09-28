@@ -43,7 +43,7 @@
       this.message = 'Time has elapsed...';
       console.debug('start - ID: ' + this.intervalId);
     },
-    stop:  function() {
+    stop: function() {
       if (this.intervalId === void 0) {
         return;
       }
@@ -52,7 +52,7 @@
       console.debug('stop -  ID: ' + this.intervalId);
       this.intervalId = void 0;
     },
-    next:  function() {
+    next: function() {
       this.stop();
       this.time = defaultTime.concentrate;
       this.start();
