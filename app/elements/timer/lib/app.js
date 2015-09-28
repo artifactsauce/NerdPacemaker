@@ -16,7 +16,7 @@
   var defaultTime = {
     concentrate: '25:00'
   };
-  Polymer({
+  new Polymer({
     is: 'timer-main',
     properties: {
       time: {
