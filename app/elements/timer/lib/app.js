@@ -72,7 +72,11 @@
       }
     },
     notify: function(title, message) {
-      console.debug(title, message);
+      var notifier = require('node-notifier');
+      notifier.notify({
+        'title': title,
+        'message': message
+      });
     },
     ready: function() {
       console.log(this);
