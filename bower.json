@@ -1,7 +1,7 @@
 {
-  "name": "PomodoroTimer",
-  "version": "0.0.1",
-  "homepage": "https://github.com/artifactsauce/PomodoroTimer",
+  "name": "NerdPacemaker",
+  "version": "0.1.0",
+  "homepage": "https://github.com/artifactsauce/NerdPacemaker",
   "authors": [
     "Kenji Akiyama <artifactsauce@gmail.com>"
   ],

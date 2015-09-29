@@ -1,6 +1,6 @@
 {
-  "name": "PomodoroTimer",
-  "short_name": "PomodoroTimer",
+  "name": "NerdPacemaker",
+  "short_name": "NerdPacemaker",
   "icons": [{
         "src": "images/touch/icon-128x128.png",
         "sizes": "128x128",

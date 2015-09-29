@@ -65,7 +65,7 @@
         this.stop();
         this.time = defaultTime.concentrate;
 
-        var title = 'PomodoroTimer';
+        var title = 'NerdPacemaker';
         var message = 'Elapsed time: ' + defaultTime.concentrate;
         this.message = message;
         this.notify(title, message);
