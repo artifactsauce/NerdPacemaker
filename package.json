@@ -7,7 +7,7 @@
     "test": "gulp test:local",
     "start": "gulp serve",
     "build": "gulp && ./node_modules/electron-prebuilt/dist/Electron.app/Contents/MacOS/Electron .",
-    "pack": "electron-packager ./ NerdPacemaker --overwrite --platform=darwin --arch=x64 --version=0.33.3 && rm -rf NerdPacemaker-*/NerdPacemaker.app/Contents/Resources/app/{app,bower_components,node_modules,LICENSE.md,README.md,bower.json,gulpfile.js,wct.conf.json}"
+    "pack": "gulp && electron-packager ./ NerdPacemaker --overwrite --platform=darwin --arch=x64 --version=0.29.2 && rm -rf NerdPacemaker-*/NerdPacemaker.app/Contents/Resources/app/{app,bower_components,node_modules,LICENSE.md,README.md,bower.json,gulpfile.js,wct.conf.json}"
   },
   "repository": {
     "type": "git",
