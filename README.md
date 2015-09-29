@@ -1,6 +1,6 @@
 # Name
 
-Pomodoro Timer
+NerdPacemaker
 
 # Description
 

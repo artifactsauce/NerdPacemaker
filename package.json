@@ -1,22 +1,22 @@
 {
-  "name": "PomodoroTimer",
+  "name": "NerdPacemaker",
   "version": "0.1.0",
   "description": "A timer application for Pomodoro technique.",
   "main": "main.js",
   "scripts": {
     "test": "gulp test:local",
     "start": "gulp serve",
-    "package": "electron-packager ./ PomodoroTimer --overwrite --platform=darwin --arch=x64 --version=0.33.3 && rm -rf PomodoroTimer-*/PomodoroTimer.app/Contents/Resources/app/{app,bower_components,node_modules,LICENSE.md,README.md,bower.json,gulpfile.js,wct.conf.json}"
+    "package": "electron-packager ./ NerdPacemaker --overwrite --platform=darwin --arch=x64 --version=0.33.3 && rm -rf NerdPacemaker-*/NerdPacemaker.app/Contents/Resources/app/{app,bower_components,node_modules,LICENSE.md,README.md,bower.json,gulpfile.js,wct.conf.json}"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:artifactsauce/PomodoroTimer.git"
+    "url": "git@github.com:artifactsauce/NerdPacemaker.git"
   },
   "author": "Kenji Akiyama",
   "bugs": {
-    "url": "https://github.com/artifactsauce/PomodoroTimer/issues"
+    "url": "https://github.com/artifactsauce/NerdPacemaker/issues"
   },
-  "homepage": "https://github.com/artifactsauce/PomodoroTimer",
+  "homepage": "https://github.com/artifactsauce/NerdPacemaker",
   "private": true,
   "dependencies": {
     "node-notifier": "^4.2.3"
