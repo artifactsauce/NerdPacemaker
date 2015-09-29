@@ -10,7 +10,7 @@ A timer application for Pomodoro technique.
 
 ## Requirements
 
-- npm
+- npm (>= 0.12)
 
 ## Dependencies
 
