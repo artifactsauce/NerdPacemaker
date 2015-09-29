@@ -1,26 +1,43 @@
-# Name
-
-NerdPacemaker
-
-# Description
+# NerdPacemaker
 
 A timer application for Pomodoro technique.
 
-# Development
+## Development
 
-## Requirements
+### Requirements
 
-- npm (>= 0.12)
+- node (>= 0.12)
+- npm (>=2.0)
 
-## Dependencies
+### Preparations
 
-- electron-prebuilt
+```console
+$ git clone git@github.com:artifactsauce/NerdPacemaker.git
+$ cd NerdPacemaker
+$ npm install
+$ bower install
+```
 
 ## Run
 
-Mac OS X
+### As a Web Application
 
 ```console
-$ cd $APP_PATH
+$ npm run start
+```
+
+### As a Mac OS X application
+
+```console
 $ ./node_modules/electron-prebuilt/dist/Electron.app/Contents/MacOS/Electron .
 ```
+
+## Package building
+
+```console
+$ npm run package
+```
+
+## License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (BSD).
