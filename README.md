@@ -29,13 +29,13 @@ $ npm run start
 ### As a Mac OS X application
 
 ```console
-$ ./node_modules/electron-prebuilt/dist/Electron.app/Contents/MacOS/Electron .
+$ npm run build
 ```
 
 ## Package building
 
 ```console
-$ npm run package
+$ npm run pack
 ```
 
 ## License
