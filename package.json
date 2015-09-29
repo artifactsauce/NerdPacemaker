@@ -6,7 +6,7 @@
   "scripts": {
     "test": "gulp test:local",
     "start": "gulp serve",
-    "package": "electron-packager ./ PomodoroTimer --overwrite --platform=darwin --arch=x64 --version=0.33.3"
+    "package": "electron-packager ./ PomodoroTimer --overwrite --platform=darwin --arch=x64 --version=0.33.3 && rm -rf PomodoroTimer-*/PomodoroTimer.app/Contents/Resources/app/{app,bower_components,node_modules,LICENSE.md,README.md,bower.json,gulpfile.js,wct.conf.json}"
   },
   "repository": {
     "type": "git",
