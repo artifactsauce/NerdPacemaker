@@ -13,15 +13,22 @@
       return minutes * 60 + seconds;
     }
   };
-  var defaultTime = {
-    concentrate: '25:00'
+  var status = {
+    mode: 'concentration'
+  };
+  var config = {
+    time: {
+      concentration: '25:00',
+      shortBreak:  '05:00',
+      longBreak:    '15:00'
+    }
   };
   new Polymer({
     is: 'timer-main',
     properties: {
       time: {
         type: String,
-        value: defaultTime.concentrate,
+        value: '00:00',
         notify: true
       },
       message: {
@@ -54,7 +61,7 @@
     },
     next: function() {
       this.stop();
-      this.time = defaultTime.concentrate;
+      this.time = config.time[status.mode];
       this.start();
     },
     timeElapses: function() {
@@ -63,10 +70,10 @@
 
       if (now === 0) {
         this.stop();
-        this.time = defaultTime.concentrate;
+        this.time = config.time[status.mode];
 
         var title = 'NerdPacemaker';
-        var message = 'Elapsed time: ' + defaultTime.concentrate;
+        var message = 'Elapsed time: ' + config.time[status.mode];
         this.message = message;
         this.notify(title, message);
       }
@@ -79,7 +86,7 @@
       });
     },
     ready: function() {
-      console.log(this);
+      this.time = config.time[status.mode];
     }
   });
 
